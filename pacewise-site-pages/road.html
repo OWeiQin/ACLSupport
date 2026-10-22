@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recovery road | Pacewise</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand" href="index.html" style="text-decoration:none;color:inherit">Pace<span>wise</span></a>
+    <nav aria-label="Sections">
+      <a href="learn.html">ACL basics</a><a href="road.html" aria-current="page">Recovery road</a><a href="checkin.html">Daily check-in</a><a href="exercises.html">Exercises</a><a href="mind.html">Mind</a><a href="community.html">Community</a>
+    </nav>
+  </div>
+  <section class="page">
+    <div class="sec-head">
+      <p class="eyebrow">Recovery road</p>
+      <h2>Five stages. Each one opens when its checks are met.</h2>
+      <p>Tick the checks your physio has confirmed. The next stage only unlocks when every check is ticked and your physio has agreed. Your ticks are saved in this browser.</p>
+    </div>
+    <div class="road-controls">
+      <label for="startPhase">Where is your physio placing you now?</label>
+      <select id="startPhase" aria-label="Current stage"></select>
+      <span class="meter" id="roadMeter"></span>
+    </div>
+    <ol class="road" id="road"></ol>
+  </section>
+  <div class="pager"><a class="btn ghost" href="learn.html">&larr; ACL basics</a><a class="btn" href="checkin.html">Daily check-in &rarr;</a></div>
+  <footer>
+    <p><strong>Pacewise is an education prototype built by students.</strong> It does not replace your surgeon or physiotherapist. When this page and your care team disagree, follow your care team.</p>
+  </footer>
+</div>
+<script src="js/common.js"></script>
+<script src="js/road.js"></script>
+</body>
+</html>

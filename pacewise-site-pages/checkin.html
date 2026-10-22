@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily check-in | Pacewise</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand" href="index.html" style="text-decoration:none;color:inherit">Pace<span>wise</span></a>
+    <nav aria-label="Sections">
+      <a href="learn.html">ACL basics</a><a href="road.html">Recovery road</a><a href="checkin.html" aria-current="page">Daily check-in</a><a href="exercises.html">Exercises</a><a href="mind.html">Mind</a><a href="community.html">Community</a>
+    </nav>
+  </div>
+  <section class="page">
+    <div class="sec-head">
+      <p class="eyebrow">Daily check-in</p>
+      <h2>How hard should today be?</h2>
+      <p>Answer three questions before you train. The result never tells you to do more than your plan. It only tells you to hold, keep steady, or stop for the day.</p>
+    </div>
+    <div class="checkin">
+      <div class="panel">
+        <div class="field"><label for="pain" class="l" style="display:flex;justify-content:space-between;font-weight:600">Knee pain right now <output id="painO">2</output></label>
+          <input type="range" id="pain" min="0" max="10" value="2"><span class="hint">0 is none, 10 is the worst you can imagine.</span></div>
+        <div class="field"><label for="swell" style="font-weight:600">Swelling compared with yesterday</label>
+          <select id="swell"><option value="0">Same or less</option><option value="1">A little more</option><option value="2">Clearly more, or the knee feels hot or tight</option></select></div>
+        <div class="field"><label for="urge" class="l" style="display:flex;justify-content:space-between;font-weight:600">Urge to push harder today <output id="urgeO">4</output></label>
+          <input type="range" id="urge" min="0" max="10" value="4"><span class="hint">Be honest. A high number is useful information, not a failure.</span></div>
+        <button class="btn" id="runCheck" type="button">Get today's guidance</button>
+      </div>
+      <div class="verdict" id="verdict" data-s="amber" aria-live="polite">
+        <span class="tag">Waiting</span>
+        <h3>Your guidance appears here</h3>
+        <p>Move the sliders and press the button.</p>
+      </div>
+    </div>
+    <div class="notice warn" style="margin-top:18px"><strong>Call your doctor or physio the same day</strong> if you have sudden large swelling, calf pain or swelling, fever, redness around the wound, or the knee gives way or locks.</div>
+  </section>
+  <div class="pager"><a class="btn ghost" href="road.html">&larr; Recovery road</a><a class="btn" href="exercises.html">Exercises &rarr;</a></div>
+  <footer>
+    <p><strong>Pacewise is an education prototype built by students.</strong> It does not replace your surgeon or physiotherapist. When this page and your care team disagree, follow your care team.</p>
+  </footer>
+</div>
+<script src="js/common.js"></script>
+<script src="js/checkin.js"></script>
+</body>
+</html>

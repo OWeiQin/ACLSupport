@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind | Pacewise</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand" href="index.html" style="text-decoration:none;color:inherit">Pace<span>wise</span></a>
+    <nav aria-label="Sections">
+      <a href="learn.html">ACL basics</a><a href="road.html">Recovery road</a><a href="checkin.html">Daily check-in</a><a href="exercises.html">Exercises</a><a href="mind.html" aria-current="page">Mind</a><a href="community.html">Community</a>
+    </nav>
+  </div>
+  <section class="page">
+    <div class="sec-head">
+      <p class="eyebrow">Mental support</p>
+      <h2>When the urge to rush takes over</h2>
+      <p>Wanting to get back fast is understandable. It becomes a problem when it pushes the knee past what it can recover from. These tools are for that moment.</p>
+    </div>
+    <div class="mind">
+      <div class="tools">
+        <div class="panel tool"><h3>Set a ceiling before you start</h3>
+          <p>Decide the most you will do today, then stop there even if you feel great.</p>
+          <div class="field" style="margin:12px 0 0"><label for="ceil" style="font-weight:600">Today I will stop after</label>
+            <input type="text" id="ceil" placeholder="e.g. 3 sets of bridges, 20 min bike"></div>
+          <div class="plan-out" id="ceilOut">Write your limit, then press the button.</div>
+          <button class="btn ghost" id="ceilBtn" type="button" style="margin-top:10px">Lock it in</button></div>
+        <div class="panel tool"><h3>Ride out the urge</h3>
+          <ul><li>Name it: "That is the rushing urge again."</li><li>Wait 90 seconds before changing the plan. Most urges fade in that time.</li><li>Ask: would I tell a teammate to do this today?</li><li>Write down one thing your knee did better this week than last week.</li></ul></div>
+        <div class="panel tool"><h3>Reframe the goal</h3>
+          <ul><li>Slower now means fewer setbacks, which is faster overall.</li><li>Every checked gate is progress you can see, even on days it feels like nothing.</li><li>Your target is a knee that lasts for years, not a date.</li></ul></div>
+        <div class="notice"><strong>If low mood or anxiety sticks around</strong> for more than a couple of weeks, or the fear of re-injury stops you training, speak to your doctor or a counsellor. In Singapore, the SOS Samaritans line, 1767, is open 24 hours.</div>
+      </div>
+      <div class="panel breath">
+        <h3>Box breathing, 4 seconds each</h3>
+        <div class="orb" id="orb"><span id="orbT">Ready</span></div>
+        <div class="cnt" id="orbC">Four rounds takes about a minute.</div>
+        <button class="btn" id="breathBtn" type="button">Start</button>
+      </div>
+    </div>
+  </section>
+  <div class="pager"><a class="btn ghost" href="exercises.html">&larr; Exercises</a><a class="btn" href="community.html">Community &rarr;</a></div>
+  <footer>
+    <p><strong>Pacewise is an education prototype built by students.</strong> It does not replace your surgeon or physiotherapist. When this page and your care team disagree, follow your care team.</p>
+  </footer>
+</div>
+<script src="js/common.js"></script>
+<script src="js/mind.js"></script>
+</body>
+</html>

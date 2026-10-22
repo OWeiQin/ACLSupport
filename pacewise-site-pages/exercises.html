@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercises | Pacewise</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand" href="index.html" style="text-decoration:none;color:inherit">Pace<span>wise</span></a>
+    <nav aria-label="Sections">
+      <a href="learn.html">ACL basics</a><a href="road.html">Recovery road</a><a href="checkin.html">Daily check-in</a><a href="exercises.html" aria-current="page">Exercises</a><a href="mind.html">Mind</a><a href="community.html">Community</a>
+    </nav>
+  </div>
+  <section class="page">
+    <div class="sec-head">
+      <p class="eyebrow">Exercise library</p>
+      <h2>What to do, by stage</h2>
+      <p>These are common rehab exercises with typical starting doses. Your physio sets the exact version for you. Doing extra sets does not speed healing.</p>
+    </div>
+    <div class="filters">
+      <span class="eyebrow">Stage</span>
+      <div class="chips" id="fPhase" role="group" aria-label="Filter by stage"></div>
+      <span class="eyebrow">Focus</span>
+      <div class="chips" id="fFocus" role="group" aria-label="Filter by focus"></div>
+    </div>
+    <div class="ex-grid" id="exGrid"></div>
+  </section>
+  <div class="pager"><a class="btn ghost" href="checkin.html">&larr; Daily check-in</a><a class="btn" href="mind.html">Mind &rarr;</a></div>
+  <footer>
+    <p><strong>Pacewise is an education prototype built by students.</strong> It does not replace your surgeon or physiotherapist. When this page and your care team disagree, follow your care team.</p>
+  </footer>
+</div>
+<script src="js/common.js"></script>
+<script src="js/exercises.js"></script>
+</body>
+</html>

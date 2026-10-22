@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Community | Pacewise</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand" href="index.html" style="text-decoration:none;color:inherit">Pace<span>wise</span></a>
+    <nav aria-label="Sections">
+      <a href="learn.html">ACL basics</a><a href="road.html">Recovery road</a><a href="checkin.html">Daily check-in</a><a href="exercises.html">Exercises</a><a href="mind.html">Mind</a><a href="community.html" aria-current="page">Community</a>
+    </nav>
+  </div>
+  <section class="page">
+    <div class="sec-head">
+      <p class="eyebrow">Connect</p>
+      <h2>People a few steps ahead, and a few behind</h2>
+      <p>Share what helped and read what worked for others. Posts marked Example are placeholders. In this prototype your own posts stay in your browser only.</p>
+    </div>
+    <div class="community">
+      <div>
+        <div class="chips" id="cFilter" role="group" aria-label="Filter posts"></div>
+        <div class="posts" id="posts"></div>
+      </div>
+      <form class="panel form-grid" id="postForm">
+        <h3>Share an insight</h3>
+        <label for="pName">Name or nickname<input type="text" id="pName" maxlength="30" placeholder="Optional"></label>
+        <label for="pStage">Your stage<select id="pStage"></select></label>
+        <label for="pText">What would you tell someone at your stage?<textarea id="pText" maxlength="500" required></textarea></label>
+        <button class="btn" type="submit">Post</button>
+        <p class="hint" id="pMsg" aria-live="polite"></p>
+        <p class="hint">Peer stories are not medical advice. Do not share personal contact details here.</p>
+      </form>
+    </div>
+  </section>
+  <div class="pager"><a class="btn ghost" href="mind.html">&larr; Mind</a><span></span></div>
+  <footer>
+    <p><strong>Pacewise is an education prototype built by students.</strong> It does not replace your surgeon or physiotherapist. When this page and your care team disagree, follow your care team.</p>
+  </footer>
+</div>
+<script src="js/common.js"></script>
+<script src="js/community.js"></script>
+</body>
+</html>
